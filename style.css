@@ -9,6 +9,13 @@
 }
 body{
   font-family: font;
+  background-color: antiquewhite;
+}
+.container{
+  width: 50vw;
+  background-color: white;
+  margin: 0px auto;
+  border-radius: 20px;
 }
 span{
   font-weight: bold;
@@ -16,11 +23,11 @@ span{
 .row{
   columns: 2;
   column-gap: 4pc;
-  padding-left: 80px;
-  line-height: 30px;
+  padding-left: 60px;
+  line-height: 10px;
 }
 hr{
-  width: 92.9pc;
+  width: 45.9pc;
 }
 .cols-2{
   color: red;
@@ -40,17 +47,37 @@ h2{
 }
 img{
   padding-left: 20px;
-  width: 98%;
+  width: 95%;
   border-radius: 50px;
   margin-top: 25px;
 }
-@media (min-width: 240px) and (max-width: 900px){
+.instruction{
+  border-radius: 20px; 
+  padding-left: 40px; 
+  padding-right: 25px;
+  line-height: 25px;
+}
+@media (min-width: 480px) and (max-width: 1024px){
   img{
-    width: 100%;
-    padding: 0;
+    width: 90%;
+    padding: 3;
     border-radius: 0;
   }
   body{
     overflow-x: hidden;
+  }
+  .container{
+    width: 90vw;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 20px;
+    font-size: smaller;
+  }
+  .instruction{
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+  hr{
+    width: 25pc;
   }
 }
